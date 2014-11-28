@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.contactmanager.MainActivity" >
+
+    <!--
+ * @className CS 6301-022 User Interface Design
+ * @author Ankit Tolia (abt140130), Abhishek Bansal (axb146030)
+ * @email-id abt140130@utdallas.edu,axb146030@utdallas.edu 
+ * @version 1.1
+ * @started date 1th Nov 2014
+ * 
+ * Program of Phonebook for an Android device that allows user to manage contacts using add, Edit, delete and view.
+ * Purpose : Class Assignment
+    -->
+<!-- Show the Action Bar in Main Activity to Add a Contact and Delete all contacts. -->
+
+    <item
+        android:id="@+id/itemAddContact"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/addContact"
+                android:icon="@drawable/add"
+                android:showAsAction="never"
+                android:title="@string/addContact"/>
+            <item
+                android:id="@+id/delAllContact"
+                android:icon="@drawable/delete"
+                android:showAsAction="never"
+                android:title="@string/deleteActContact"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/itemAddContact"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+</menu>

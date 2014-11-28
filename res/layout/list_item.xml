@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * @className CS 6301-022 User Interface Design
+ * @author Ankit Tolia (abt140130), Abhishek Bansal (axb146030)
+ * @email-id abt140130@utdallas.edu,axb146030@utdallas.edu 
+ * @version 1.1
+ * @started date 1th Nov 2014
+ * 
+ * Program of Phonebook for an Android device that allows user to manage contacts using add, Edit, delete and view.
+ * Purpose : Class Assignment
+-->
+<!-- 
+Child Element Layout of the Listview for each contact
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:paddingRight="5dp"
+        android:src="@drawable/view" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/contactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

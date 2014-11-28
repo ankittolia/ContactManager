@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Phonebook</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="addActContact">New</string>
+    <string name="editActContact">Edit</string>
+    <string name="deleteActContact">Delete All</string>
+    <string name="deleteContact">Delete</string>
+    <string name="fnTxt">Please Enter First Name</string>
+    <string name="addErr">Error Saving Contact</string>
+    <string name="updErr">Error Updating Contact</string>
+    <string name="addSuccess">Contact Saved</string>
+    <string name="delSuccess">Contact Deleted</string>
+    <string name="delAllSuccess">All Contacts Deleted</string>
+    <string name="delFailed">Contact Deletion Failed</string>
+    <string name="updSuccess">Contact Updated</string>
+    <string name="errContactTxt">Your Contact List is Currently Empty</string>
+    <string name="errContactBelowTxt">To add a new contact, select the option from menu.</string>
+    <string name="addContact">Add</string>
+    <string name="addContactTitle">New Contact</string>
+    <string name="updContactTitle">Update Contact</string>
+    <string name="viewContact">Contact info</string>
+    <string name="updateContact">Update</string>
+
+</resources>

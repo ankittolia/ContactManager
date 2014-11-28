@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * @className CS 6301-022 User Interface Design
+ * @author Ankit Tolia (abt140130), Abhishek Bansal (axb146030)
+ * @email-id abt140130@utdallas.edu,axb146030@utdallas.edu 
+ * @version 1.1
+ * @started date 1th Nov 2014
+ * 
+ * Program of Phonebook for an Android device that allows user to manage contacts using add, Edit, delete and view.
+ * Purpose : Class Assignment
+-->
+<!-- 
+Layout to display fields for adding the contact.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textSize="18dp"
+                    android:textColor="#372c24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="*" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textCapWords" />
+            <!-- Email Label -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="18dp"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/lname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:textSize="18dp"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="5dip"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18dp"
+                android:textColor="#372c24" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:clickable="true"
+                android:text="@string/addContact" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:padding="10dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

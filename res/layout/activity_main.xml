@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * @className CS 6301-022 User Interface Design
+ * @author Ankit Tolia (abt140130), Abhishek Bansal (axb146030)
+ * @email-id abt140130@utdallas.edu,axb146030@utdallas.edu 
+ * @version 1.1
+ * @started date 1th Nov 2014
+ * 
+ * Program of Phonebook for an Android device that allows user to manage contacts using add, Edit, delete and view.
+ * Purpose : Class Assignment
+-->
+<!-- 
+Sets the main activity layout
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/errTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        android:text="@string/errContactTxt"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/errTxtSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/errTxt"
+        android:padding="3dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/errContactBelowTxt"
+        android:textSize="14dp"
+        android:visibility="gone" >
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:padding="10dip"
+        android:visibility="gone" />
+
+</RelativeLayout>
